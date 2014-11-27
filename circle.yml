@@ -6,4 +6,4 @@ dependencies:
     - "~/walter"
 test:
   override:
-    - ~/walter/walter
+    - walter
