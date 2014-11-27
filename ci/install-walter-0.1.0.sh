@@ -1,0 +1,13 @@
+set -x
+set -e
+W_VERS=walter-0.1.0
+W_DIR=walter_linux_amd64
+
+mkdir -p ~/walter/${W_VERS}
+
+if [ ! -e ~/walter/${W_VERS}/${W_DIR}/walter ]; then
+  wget https://github.com/walter-cd/walter/releases/download/v0.1.0/walter_linux_amd64.tar.gz
+  tar xvzf walter_linux_amd64.tar.gz -C ~/walter/${W_VERS}
+fi
+
+ln -sf ${HOME}/walter/${W_VERS}/${W_DIR}/walter ${HOME}/walter/walter

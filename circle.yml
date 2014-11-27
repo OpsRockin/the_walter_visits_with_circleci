@@ -1,0 +1,9 @@
+---
+dependencies:
+  pre:
+    - bash ./ci/install-walter-0.1.0.sh
+  cache_directories:
+    - "~/walter"
+test:
+  override:
+    - ~/walter/walter
