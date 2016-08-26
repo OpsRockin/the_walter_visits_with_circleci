@@ -1,7 +1,7 @@
 ---
 dependencies:
   pre:
-    - bash ./ci/install-walter-1.2.0.sh
+    - bash ./ci/install-walter-1.4.0.sh
   cache_directories:
     - "~/walter"
 test:
